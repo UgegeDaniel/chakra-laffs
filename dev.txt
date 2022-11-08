@@ -8,3 +8,5 @@ END-2-END TESTS is the testing of the entire application flow and ensuring it wo
 npm install @testing-library/jest-dom @testing-library/react @testing-library/user-event
 npm install @types/jest @types/react @types/node @types/react-dom  
 
+use find by to test for asynchronous functions and activities 
+use get by to test normally

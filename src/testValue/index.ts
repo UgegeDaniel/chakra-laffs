@@ -1,8 +1,5 @@
 import { DataType } from "../types/types";
-
-const testValues: {
-    data: DataType
-} = {
+const testValues = {
     data: {
         setup: 'test setup',
         punchline: 'test punchline',
