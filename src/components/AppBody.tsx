@@ -6,7 +6,7 @@ import { AppHeaderStyled } from '../styledComponents';
 // eslint-disable-next-line func-names
 const AppBody: React.FC<BodyProps> = function ({
   data, fetchData, isPunchline, setIsPunchline,
-}): JSX.Element {
+}): React.ReactElement {
   return (
     <div>
       <AppHeaderStyled>Chakra Laffs</AppHeaderStyled>
