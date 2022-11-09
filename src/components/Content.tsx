@@ -8,13 +8,13 @@ const Content: React.FC<ContentProps> = function ({
 }): JSX.Element {
   return (
     <div>
-      <JokeStyled>
+      <JokeStyled data-testId="joke">
         {' '}
         {data?.setup}
         {' '}
       </JokeStyled>
       {isPunchline && (
-        <PuchLineStyled>
+        <PuchLineStyled data-testId="punchline">
           {data?.punchline}
         </PuchLineStyled>
       )}

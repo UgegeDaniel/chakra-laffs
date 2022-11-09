@@ -4,11 +4,14 @@ import { FETCH_URL } from '../constants';
 const useData = () => {
   const [data, setData] = useState();
   const [isPunchline, setIsPunchline] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
   const fetchData = async () => {
+    setIsLoading(true);
     try {
       const response = await fetch(FETCH_URL);
       const responseData = await response.json();
       setData(responseData);
+      setIsLoading(false)
       setIsPunchline(false);
     } catch (error) {
       // eslint-disable-next-line no-console
@@ -21,7 +24,7 @@ const useData = () => {
     !data && fetchData();
   }, [data]);
   return {
-    data, fetchData, isPunchline, setIsPunchline,
+    data, fetchData, isPunchline, setIsPunchline, isLoading
   };
 };
 

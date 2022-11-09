@@ -6,7 +6,7 @@ import useData from './hooks/useData';
 
 function App() {
   const {
-    data, fetchData, isPunchline, setIsPunchline,
+    data, isLoading, fetchData, isPunchline, setIsPunchline,
   } = useData();
   return (
     <div>
@@ -17,6 +17,7 @@ function App() {
             fetchData={fetchData}
             isPunchline={isPunchline}
             setIsPunchline={setIsPunchline}
+            isLoading={isLoading}
           />
         </AppWrapperStyled>
       </AppStyled>

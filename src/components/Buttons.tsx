@@ -8,10 +8,10 @@ const Buttons: React.FC<ButtonsProps> = function ({
 }): JSX.Element {
   return (
     <div>
-      <PuchLineButtonStyled onClick={() => setIsPunchline(!isPunchline)}>
+      <PuchLineButtonStyled data-testId="btn-1" onClick={() => setIsPunchline(!isPunchline)} type="button">
         {!isPunchline ? 'See Punchline' : 'Hide Punchline'}
       </PuchLineButtonStyled>
-      <AnotherButtonStyled onClick={() => fetchData()}>
+      <AnotherButtonStyled data-testId="btn-2" onClick={() => fetchData()} type="button">
         Another Joke
       </AnotherButtonStyled>
     </div>

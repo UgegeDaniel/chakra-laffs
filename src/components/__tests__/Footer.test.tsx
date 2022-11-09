@@ -5,13 +5,20 @@ import { Footer } from '..';
 import testValues from '../../testValue';
 
 const { data } = testValues
-it('should render author name', () => {
-    render(<Footer data={data} />);
-    const author = screen.getByText(/ugegedaniel/i);
-    expect(author).toBeInTheDocument();
-});
-it('should render joke category', () => {
-    render(<Footer data={data} />);
-    const author = screen.getByText(data.category);
-    expect(author).toBeInTheDocument();
-});
+describe('testing the footer component', () => {
+    it('should render author name', () => {
+        render(<Footer data={data} />);
+        const author = screen.getByText(/ugegedaniel/i);
+        expect(author).toBeInTheDocument();
+    });
+    it('should render joke category', () => {
+        render(<Footer data={data} />);
+        const category = screen.getByText(data.category);
+        expect(category).toBeInTheDocument();
+    });
+})
+// it('should not render joke category', () => {
+//     render(<Footer/>);
+//     const category = screen.getByText(data.category);
+//     expect(category).not.toBeInTheDocument();
+// });
