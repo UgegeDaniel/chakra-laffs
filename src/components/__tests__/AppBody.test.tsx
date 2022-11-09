@@ -20,7 +20,7 @@ describe("testing the AppBody component", () => {
     });
     it('should not render app content but render loader if no data to display', () => {
         render(<AppBody
-            isLoading={false}
+            isLoading
             isPunchline
             setIsPunchline={mockFxn}
             fetchData={mockFxn}

@@ -2,7 +2,6 @@ import React from 'react';
 import { fireEvent, render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom'
 import { Buttons } from '..';
-import { Content } from '..';
 
 import testValues from '../../testValue';
 const mockFxn = jest.fn()
