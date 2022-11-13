@@ -1,7 +1,7 @@
 *deployed on vercel*
-# Moviemania
+# Chakra-Laffs
 
-This is a React app that displays random jokes by categories. Its a simple app to demostrate the basic features of the react library and the react testing library in conjunction with jest. 
+This is a React / Typescript app that displays random jokes by categories. Its a simple app to demostrate the basic features of the react library and the react testing library in conjunction with jest. 
 
 ## Table of Contents
 
