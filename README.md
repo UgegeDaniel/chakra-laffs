@@ -40,8 +40,9 @@ This is a React / Typescript app that displays random jokes by categories. Its a
 ## Built with
 
 - HTML5
-- Styled Components
-- TypeScript
+- Chakra UI
+- Typescript
+- ES Lint (Air Bnb recomended standard)
 - React
 
 
@@ -52,7 +53,7 @@ This is a React / Typescript app that displays random jokes by categories. Its a
 Find the live version [here](https://chakra-laffs.vercel.app/).
 Below is a screenshot of what it looks like.
 
-<img src="src/assets/chakra-laffs.png" alt="screenshot">
+<img src="src/assets/chakra-laffs.png" alt="screenshot" height="300px" width="auto"/>
 
 
 <!-- REQUIRED INSTALLATION -->
