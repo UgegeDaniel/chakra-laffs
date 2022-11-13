@@ -52,7 +52,7 @@ This is a React / Typescript app that displays random jokes by categories. Its a
 Find the live version [here](https://chakra-laffs.vercel.app/).
 Below is a screenshot of what it looks like.
 
-<img src="https://bitbucket.org/ugegedaniel/project-img/src/master/img/chakra-laffs.png" alt="screenshot">
+<img src="src/assets/chakra-laffs.png" alt="screenshot">
 
 
 <!-- REQUIRED INSTALLATION -->
