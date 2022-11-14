@@ -1,7 +1,8 @@
 /* eslint-disable @typescript-eslint/no-unused-expressions */
 import React from 'react';
-import AppBody from './components/AppBody';
+import { AppBody } from './components';
 import { AppStyled, AppWrapperStyled } from './styledComponents';
+// eslint-disable-next-line import/no-named-as-default
 import useData from './hooks/useData';
 
 function App() {

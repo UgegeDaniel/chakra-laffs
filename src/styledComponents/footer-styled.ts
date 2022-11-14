@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+
 export const GithubProfileStyled = styled.h2`
 position: absolute;
 height: 20px;

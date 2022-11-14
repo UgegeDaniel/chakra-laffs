@@ -11,7 +11,7 @@ const Buttons: React.FC<ButtonsProps> = function ({
       <PuchLineButtonStyled data-testId="btn-1" onClick={() => setIsPunchline(!isPunchline)} type="button">
         {!isPunchline ? 'See Punchline' : 'Hide Punchline'}
       </PuchLineButtonStyled>
-      <AnotherButtonStyled data-testId="btn-2" onClick={() => fetchData()} type="button">
+      <AnotherButtonStyled data-testId="btn-2" onClick={() => fetchData} type="button">
         Another Joke
       </AnotherButtonStyled>
     </div>

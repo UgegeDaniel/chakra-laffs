@@ -1,18 +1,16 @@
 import styled from 'styled-components';
 import { STYLE_CONSTANTS } from '../constants';
+
 export const AppWrapperStyled = styled.div`
 position: absolute;
-left: 0%;
-right: 0%;
-top: 0%;
-bottom: 0%;
+${STYLE_CONSTANTS.zero};
 background: ${STYLE_CONSTANTS.primaryColor};
 `;
 export const AppStyled = styled.main`
 position: relative;
 font-family: sans-serif;
 line-height: 1.5;
-min-height: 95vh;
+min-height: ${STYLE_CONSTANTS.appHeight};
 margin: auto;
 overflow: hidden;
 display: grid;

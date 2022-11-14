@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+
 export const JokeStyled = styled.div`
 position: absolute;
 height: 100px;

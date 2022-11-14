@@ -1,6 +1,4 @@
 import styled from 'styled-components';
-import { STYLE_CONSTANTS } from '../constants';
-
 
 export const PuchLineButtonStyled = styled.button`
 position: absolute;

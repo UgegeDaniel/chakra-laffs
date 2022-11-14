@@ -1,17 +1,19 @@
 import { useState, useEffect } from 'react';
 import { FETCH_URL } from '../constants';
+import { DataType } from '../types';
 
 const useData = () => {
-  const [data, setData] = useState();
+  const [data, setData] = useState<DataType>();
   const [isPunchline, setIsPunchline] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
   const fetchData = async () => {
     setIsLoading(true);
     try {
       const response = await fetch(FETCH_URL);
-      const responseData = await response.json();
+      // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
+      const responseData: DataType = await response.json();
       setData(responseData);
-      setIsLoading(false)
+      setIsLoading(false);
       setIsPunchline(false);
     } catch (error) {
       // eslint-disable-next-line no-console
@@ -24,7 +26,7 @@ const useData = () => {
     !data && fetchData();
   }, [data]);
   return {
-    data, fetchData, isPunchline, setIsPunchline, isLoading
+    data, fetchData, isPunchline, setIsPunchline, isLoading,
   };
 };
 
